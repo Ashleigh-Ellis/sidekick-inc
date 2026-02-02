@@ -5,9 +5,8 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // Base path for GitHub Pages - update this to your repo name if needed
-  // e.g., '/sidekick-inc/' if your repo is named 'sidekick-inc'
-  base: './',
+  // Base path for GitHub Pages
+  base: '/sidekick-inc/',
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
