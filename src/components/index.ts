@@ -1,0 +1,12 @@
+// Barrel exports for all components
+export { Header } from './Header';
+export { Hero } from './Hero';
+export { Missions } from './Missions';
+export { WhySideKick } from './WhySideKick';
+export { Pricing } from './Pricing';
+export { HowItWorks } from './HowItWorks';
+export { Info } from './Info';
+export { Contact } from './Contact';
+export { Footer } from './Footer';
+export { ScrollToTop } from './ScrollToTop';
+export { DarkModeToggle } from './DarkModeToggle';
