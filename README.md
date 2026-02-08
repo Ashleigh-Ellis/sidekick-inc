@@ -10,7 +10,7 @@ A single-page website for SideKick Incorporated, a flexible support services bus
 - 📱 Fully responsive design (mobile-first)
 - ♿ Accessible (semantic HTML, ARIA labels, keyboard navigation)
 - ⚡ Fast static site built with Vite + React + TypeScript
-- 🚀 Ready for GitHub Pages deployment
+- 🚀 Ready for GitHub Pages deployment?
 
 ## Tech Stack
 
