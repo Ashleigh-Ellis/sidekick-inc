@@ -77,6 +77,7 @@ export function Header() {
         <nav 
           className={`${styles.nav} ${isMobileMenuOpen ? styles.navOpen : ''}`}
           aria-label="Main navigation"
+          id="mobile-menu"
         >
           <ul className={styles.navList}>
             {NAV_ITEMS.map((item) => (
@@ -101,7 +102,6 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <DarkModeToggle />
           <a 
             href={WHATSAPP_LINK}
             target="_blank"
@@ -114,19 +114,22 @@ export function Header() {
           </a>
         </nav>
 
-        <button 
-          className={styles.mobileMenuButton}
-          onClick={toggleMobileMenu}
-          aria-expanded={isMobileMenuOpen}
-          aria-controls="mobile-menu"
-          aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
-        >
-          <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.hamburgerOpen : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
+        <div className={styles.rightSide}>
+          <DarkModeToggle />
+          <button 
+            className={styles.mobileMenuButton}
+            onClick={toggleMobileMenu}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
+            aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
+          >
+            <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.hamburgerOpen : ''}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
+        </div>
       </div>
 
       {isMobileMenuOpen && (
