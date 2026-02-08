@@ -74,6 +74,12 @@ export function About() {
           <p className={styles.subtitle}>
             The philosophy, the person, and the proof behind SideKick Incorporated.
           </p>
+          <p className={styles.subtitle}>
+            SideKick Incorporated is for people who don't need a big operation — they need the right person. Someone observant, capable, and flexible enough to step in, handle what needs doing, and step back once it's sorted.
+          </p>
+          <p className={styles.subtitle}>
+            Every hero needs a sidekick — not for the spotlight, but for the moments that make everything else possible.
+          </p>
         </div>
       </section>
 
@@ -83,7 +89,7 @@ export function About() {
           <div className={styles.aboutContent}>
             <div className={styles.aboutImage}>
               <img 
-                src="/sidekick-hero.png" 
+                src={`${import.meta.env.BASE_URL}sidekick-hero.png`}
                 alt="Your SideKick"
                 className={styles.profileImage}
               />
@@ -93,21 +99,19 @@ export function About() {
                 <h2 className="comic-header comic-header--green">Meet Your SideKick</h2>
               </div>
               
-              {/* PLACEHOLDER: User to fill in their personal information */}
-              <div className={styles.placeholder}>
-                <p><strong>This is where your story goes.</strong></p>
+              <div className={styles.aboutTextContent}>
                 <p>
-                  Tell potential clients about yourself — your background, what drives you, 
-                  why you started SideKick Incorporated, and what makes you the right person 
-                  to call when they need help.
+                  SideKick Incorporated is built around a real person — Ash — and a way of working that's grown naturally over time.
                 </p>
-                <p>Consider including:</p>
-                <ul>
-                  <li>Your background and experience</li>
-                  <li>What motivates you to help others</li>
-                  <li>Your approach to problem-solving</li>
-                  <li>What clients can expect when working with you</li>
-                </ul>
+                <p>
+                  I've always been someone people turn to when things don't quite fit into a neat category. The odd job. The last-minute problem. The task that needs thought, care, and a steady hand rather than a rigid service list. Over time, that pattern became clear: what I offer isn't just a skill, it's situational problem-solving.
+                </p>
+                <p>
+                  SideKick was created to give that kind of help a name and a structure. Not as a catch-all business, but as a reliable point of contact when you need someone capable, adaptable, and present. I don't just complete tasks — I assess what's needed, communicate clearly, and adjust as the situation unfolds.
+                </p>
+                <p>
+                  When you work with SideKick, you're working directly with me. That means consistency, accountability, and a human approach. I take pride in showing up prepared, respecting your space, and handling each mission with care — whether it's practical, creative, or simply being there when you can't be.
+                </p>
               </div>
             </div>
           </div>
@@ -123,15 +127,20 @@ export function About() {
             </div>
             
             <p className={styles.leadText}>
-              SideKick Incorporated isn't about rigid service lists or 
-              one-size-fits-all solutions.
+              SideKick Incorporated exists because life rarely fits into predefined services.
             </p>
             <p>
-              It's about being adaptable, trustworthy, and intuitive — 
-              stepping in where you need support and stepping back when 
+              Instead of asking you to translate your needs into the "right" category, SideKick starts with understanding the situation — then choosing the best way to support it. Sometimes that means fixing something. Sometimes it means moving, watching over, or simply making sure nothing falls through the cracks.
+            </p>
+            <p>
+              The mission shapes the method — not the other way around.
+            </p>
+            <p>
+              It's about being adaptable, trustworthy, and intuitive —
+              stepping in where you need support and stepping back when
               the mission is complete.
             </p>
-            
+
             <div className={styles.poetic}>
               <p>The sidekick is the hero's hero.</p>
               <p>The secret weapon.</p>

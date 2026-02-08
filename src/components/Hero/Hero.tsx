@@ -51,7 +51,7 @@ export function Hero() {
           <div className={styles.heroImageContainer}>
             <div className={styles.heroImage}>
               <img 
-                src="/sidekick-hero.png" 
+                src={`${import.meta.env.BASE_URL}sidekick-hero.png`}
                 alt="SideKick Incorporated"
                 className={styles.heroImg}
               />
